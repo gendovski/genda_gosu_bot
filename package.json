@@ -1,0 +1,25 @@
+{
+  "name": "genda_gosu_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "distribute": "node dist/app.js",
+    "develop": "tsc-watch --skipLibCheck --onSuccess \"node dist/index.js\"",
+    "build-ts": "tsc --skipLibCheck",
+    "pretty": "prettier --check src",
+    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "grammy": "^1.16.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.1.3"
+  }
+}

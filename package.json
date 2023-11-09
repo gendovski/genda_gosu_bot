@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "distribute": "node dist/app.js",
+    "distribute": "node dist/index.js",
     "develop": "tsc-watch --skipLibCheck --onSuccess \"node dist/index.js\"",
     "build-ts": "tsc --skipLibCheck",
     "pretty": "prettier --check src",
